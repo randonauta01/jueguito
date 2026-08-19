@@ -39,12 +39,12 @@ práctico del notebook de Cálculo Aplicado.
 
 def f2(x, y):
     """Función objetivo: un 'tazón' con mínimo global en el origen."""
-    return x ** 2 + y ** 2
+    return (x-4) ** 2 + (y-6) ** 2
 
 
 def gradiente_f2(x, y):
     """Gradiente de f2: vector de derivadas parciales."""
-    return np.array([2 * x, 2 * y])
+    return np.array([2 * (x-4), 2 * (y-6)])
 
 
 def descenso_gradiente(grad_func, punto_inicial, tasa_aprendizaje, iteraciones):
